@@ -82,6 +82,38 @@ SmartFood-Rescue/
 - Feature engineering
 - Prepared dataset export
 
+ Day 2: ANN Regression Using PyTorch — Completed
+
+Performed feature preprocessing using StandardScaler and OneHotEncoder.
+
+Built an Artificial Neural Network (ANN) regression model using PyTorch.
+
+Trained the model using Adam optimizer and L1Loss.
+
+Implemented early stopping.
+
+Evaluated model performance using MAE, MSE, RMSE, and R².
+
+Created actual vs predicted and error distribution visualizations.
+
+Performed category-wise MAE and percentage MAE analysis.
+
+Best Model Configuration:
+
+Architecture: 128 → 64 → 1
+
+Loss Function: L1Loss
+
+Optimizer: Adam
+
+Learning Rate: 0.001
+
+Validation MAE: 78.87
+
+Validation R²: 0.7996
+
+Status: Completed
+
 ## Author
 
 Computer Science Engineering Student
