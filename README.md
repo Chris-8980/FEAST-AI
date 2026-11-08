@@ -58,18 +58,6 @@ Dataset files are maintained separately in Google Drive.
 | Day 6 | Application Development | Pending |
 | Day 7 | Testing and Documentation | Pending |
 
-## Repository Structure
-
-```text
-SmartFood-Rescue/
-│
-├── notebooks/
-│   └── Day_1_Dataset_Preparation.ipynb
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
 
 ## Current Progress
 
