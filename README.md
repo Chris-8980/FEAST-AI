@@ -140,6 +140,8 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 - `demand_thresholds.pkl`
 - Reused `preprocessor.pkl` from Day 2.
 
+**Status:** Completed
+
 ### Day 4 – Model Integration and Test Predictions
 
 - Loaded the trained ANN regression and classification models.
@@ -149,7 +151,7 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 - Generated food order quantity predictions using ANN Regression.
 - Classified food demand into Low, Medium and High categories using ANN Classification.
 - Reversed the logarithmic transformation to obtain predicted order quantities.
-- Validated predictions for missing values, infinite values and demand distribution.
+- Validated predictions by checking missing values, infinite values, regression statistics and demand distribution.
 - Inspected the top 10 predicted food order quantities.
 - Exported the combined predictions into a CSV file.
 
@@ -164,8 +166,6 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 
 **Saved Output:**
 - `smartfood_predictions.csv`
-
-**Status:** Completed
 
 **Status:** Completed
 
