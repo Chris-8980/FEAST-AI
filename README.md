@@ -53,9 +53,9 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 | Day 1 | Dataset Preparation and EDA | Completed |
 | Day 2 | ANN Regression and Evaluation | Completed |
 | Day 3 | ANN Classification and Evaluation | Completed |
-| Day 4 | Application Development and Model Integration | Upcoming |
-| Day 5 | Application Features and Prediction Workflow | Upcoming |
-| Day 6 | Testing and Performance Improvements | Upcoming |
+| Day 4 | Model Integration and Test Predictions | Completed |
+| Day 5 | Streamlit Application Development | Upcoming |
+| Day 6 | Application Testing and Improvements | Upcoming |
 | Day 7 | Final Documentation and Project Completion | Upcoming |
 
 
@@ -139,6 +139,33 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 - `ann_classifier.pth`
 - `demand_thresholds.pkl`
 - Reused `preprocessor.pkl` from Day 2.
+
+### Day 4 – Model Integration and Test Predictions
+
+- Loaded the trained ANN regression and classification models.
+- Loaded the saved preprocessing pipeline and demand thresholds.
+- Reconstructed both ANN architectures using PyTorch.
+- Preprocessed the test dataset using the saved preprocessor.
+- Generated food order quantity predictions using ANN Regression.
+- Classified food demand into Low, Medium and High categories using ANN Classification.
+- Reversed the logarithmic transformation to obtain predicted order quantities.
+- Validated predictions for missing values, infinite values and demand distribution.
+- Inspected the top 10 predicted food order quantities.
+- Exported the combined predictions into a CSV file.
+
+**Test Prediction Summary:**
+
+| Parameter | Value |
+|---|---:|
+| Total Test Records | 32,573 |
+| Low Demand Predictions | 9,953 |
+| Medium Demand Predictions | 13,524 |
+| High Demand Predictions | 9,096 |
+
+**Saved Output:**
+- `smartfood_predictions.csv`
+
+**Status:** Completed
 
 **Status:** Completed
 
