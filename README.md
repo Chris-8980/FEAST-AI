@@ -54,7 +54,7 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 | Day 2 | ANN Regression and Evaluation | Completed |
 | Day 3 | ANN Classification and Evaluation | Completed |
 | Day 4 | Model Integration and Test Predictions | Completed |
-| Day 5 | Classification Evaluation and Performance Analysis | Upcoming |
+| Day 5 | Classification Evaluation and Performance Analysis | Completed |
 | Day 6 | Streamlit Application Development | Upcoming |
 | Day 7 | Application Testing, Documentation and Project Completion | Upcoming |
 
