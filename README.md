@@ -54,9 +54,9 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 | Day 2 | ANN Regression and Evaluation | Completed |
 | Day 3 | ANN Classification and Evaluation | Completed |
 | Day 4 | Model Integration and Test Predictions | Completed |
-| Day 5 | Streamlit Application Development | Upcoming |
-| Day 6 | Application Testing and Improvements | Upcoming |
-| Day 7 | Final Documentation and Project Completion | Upcoming |
+| Day 5 | Classification Evaluation and Performance Analysis | Upcoming |
+| Day 6 | Streamlit Application Development | Upcoming |
+| Day 7 | Application Testing, Documentation and Project Completion | Upcoming |
 
 
 ## Current Progress
@@ -166,6 +166,36 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 
 **Saved Output:**
 - `smartfood_predictions.csv`
+
+**Status:** Completed
+
+### Day 5 – ANN Classification Evaluation and Performance Analysis
+
+- Reloaded the saved ANN classification model.
+- Recreated the chronological training and validation split.
+- Applied the existing preprocessing pipeline to validation data.
+- Generated predictions on 95,200 validation records.
+- Evaluated model performance using accuracy, precision, recall and F1-score.
+- Generated a detailed classification report.
+- Created original and normalized confusion matrices.
+- Saved evaluation metrics, classification reports and confusion matrix visualizations.
+
+**Classification Evaluation:**
+
+| Metric | Score |
+|---|---:|
+| Accuracy | 76.73% |
+| Precision (Macro) | 77.78% |
+| Recall (Macro) | 76.80% |
+| F1-Score (Macro) | 77.13% |
+
+**Saved Evaluation Artifacts:**
+- `classification_metrics.csv`
+- `classification_report.csv`
+- `confusion_matrix.csv`
+- `normalized_confusion_matrix.csv`
+- `confusion_matrix.png`
+- `normalized_confusion_matrix.png`
 
 **Status:** Completed
 
