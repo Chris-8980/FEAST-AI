@@ -1,10 +1,11 @@
-# SmartFood Rescue
+# FEAST AI
+### Food Estimation and Analysis using Smart Technology
 
-### Food Demand Forecasting and Classification using Artificial Neural Networks (ANN)
+**An ANN-Based Food Demand Forecasting, Classification and Surplus Estimation System.**
 
 ## About the Project
 
-SmartFood Rescue is a machine learning and deep learning project focused on predicting food demand using historical food order data.
+FEAST AI is a machine learning and deep learning project focused on food demand forecasting, demand classification and surplus estimation using historical food order data.
 
 The primary objective is to help food businesses make better food preparation decisions, reduce overproduction and minimize food wastage.
 
@@ -13,18 +14,29 @@ The project uses two Artificial Neural Network (ANN) models:
 - **ANN Regression:** Predicts the expected number of food orders.
 - **ANN Classification:** Categorizes food demand into Low, Medium and High.
 
+In addition, the system estimates potential food surplus and provides recommendations to support better surplus management.
+
 ## Problem Statement
 
 Food businesses often struggle to estimate customer demand accurately, resulting in excess food preparation or insufficient availability.
 
-SmartFood Rescue aims to address this problem through data-driven demand forecasting and classification.
+FEAST AI aims to address this problem through data-driven demand forecasting, classification and surplus estimation, helping food businesses make informed food preparation and surplus management decisions.
 
 ## Project Objectives
 
 1. Forecast the expected number of food orders.
 2. Classify food demand into Low, Medium and High categories.
-3. Help businesses make informed food preparation decisions.
-4. Reduce unnecessary food production and food wastage.
+3. Estimate potential surplus based on prepared quantity and predicted demand.
+4. Provide recommendations for managing potential food surplus.
+5. Reduce unnecessary food production and food wastage.
+
+## Key Features
+
+- **Food Demand Forecasting:** Predicts expected food orders using ANN Regression.
+- **Demand Classification:** Categorizes food demand into Low, Medium and High using ANN Classification.
+- **Surplus Estimation:** Estimates potential surplus by comparing prepared quantity with predicted orders.
+- **Food Rescue Recommendations:** Suggests actions based on the estimated surplus.
+- **Interactive Streamlit Application:** Allows users to enter food-related information and view predictions and recommendations.
 
 ## Technologies Used
 
@@ -44,19 +56,23 @@ SmartFood Rescue aims to address this problem through data-driven demand forecas
 
 The dataset contains historical food demand information, including pricing, promotions, meal categories, food centres and order quantities.
 
-Dataset files and trained model artifacts are stored separately in Google Drive.
+Dataset setup instructions are available in the `food_dataset/` directory.
+
+The prepared training dataset (`train_prepared.csv`) is excluded from GitHub because of its large file size.
+
+Before running the Streamlit application, ensure that `train_prepared.csv` is placed inside the root-level `food_dataset/` directory.
 
 ## Development Roadmap
 
 | Day | Development Task | Status |
 |---|---|---|
 | Day 1 | Dataset Preparation and EDA | Completed |
-| Day 2 | ANN Regression and Evaluation | Completed |
-| Day 3 | ANN Classification and Evaluation | Completed |
+| Day 2 | ANN-Based Food Demand Regression Using PyTorch | Completed |
+| Day 3 | ANN-Based Food Demand Classification Using PyTorch | Completed |
 | Day 4 | Model Integration and Test Predictions | Completed |
-| Day 5 | Classification Evaluation and Performance Analysis | Completed |
-| Day 6 | Streamlit Application Development | Upcoming |
-| Day 7 | Application Testing, Documentation and Project Completion | Upcoming |
+| Day 5 | ANN Classification Evaluation and Performance Analysis | Completed |
+| Day 6 | FEAST AI Streamlit Application Development | Completed |
+| Day 7 | Final Testing, Documentation and GitHub Integration | In Progress |
 
 
 ## Current Progress
@@ -72,8 +88,7 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 
 **Status:** Completed
 
-### Day 2 – ANN Regression Using PyTorch
-
+### Day 2 – ANN-Based Food Demand Regression Using PyTorch
 - Performed feature preprocessing using StandardScaler and OneHotEncoder.
 - Built an Artificial Neural Network (ANN) regression model using PyTorch.
 - Trained the model using Adam optimizer and L1Loss.
@@ -95,7 +110,7 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 
 **Status:** Completed
 
-### Day 3 – ANN Classification Using PyTorch
+### Day 3 – ANN-Based Food Demand Classification Using PyTorch
 
 - Reused the Day 2 preprocessing pipeline.
 - Created three demand categories: Low, Medium and High.
@@ -104,7 +119,7 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 - Used CrossEntropyLoss and Adam optimizer.
 - Implemented early stopping.
 - Evaluated performance using accuracy, precision, recall and F1-score.
-- Generated classification report and confusion matrix.
+- Generated a classification report and confusion matrix.
 - Predicted demand categories for 32,573 test records.
 
 **Model Configuration:**
@@ -117,7 +132,7 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 | Learning Rate | 0.001 |
 | Best Validation Loss | 0.5243 |
 
-**Classification Evaluation:**
+**Validation Classification Performance:**
 
 | Metric | Score |
 |---|---:|
@@ -180,8 +195,7 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 - Created original and normalized confusion matrices.
 - Saved evaluation metrics, classification reports and confusion matrix visualizations.
 
-**Classification Evaluation:**
-
+**Validation Classification Performance:**
 | Metric | Score |
 |---|---:|
 | Accuracy | 76.73% |
@@ -199,6 +213,47 @@ Dataset files and trained model artifacts are stored separately in Google Drive.
 
 **Status:** Completed
 
+
+### Day 6 – FEAST AI Streamlit Application Development
+
+- Developed an interactive Streamlit application.
+- Integrated the trained ANN regression and classification models.
+- Loaded the saved preprocessing pipeline and demand thresholds.
+- Implemented user input fields for food centre, meal, pricing, promotion and other relevant features.
+- Generated food demand predictions.
+- Classified demand into Low, Medium and High.
+- Implemented surplus estimation using prepared quantity and predicted orders.
+- Added food rescue recommendations based on estimated surplus.
+- Designed the application interface using Streamlit.
+
+**Status:** Completed
+
+
+## Installation and Execution
+
+### 1. Clone the Repository
+
+git clone YOUR_GITHUB_REPOSITORY_URL
+
+### 2. Navigate to the Project Directory
+
+cd FEAST
+
+### 3. Install Dependencies
+
+pip install -r requirements.txt
+
+### 4. Prepare the Dataset
+
+Place the required train_prepared.csv file inside:
+
+food_dataset/train_prepared.csv
+
+Refer to food_dataset/README.md for dataset setup instructions.
+
+### 5. Run the Application
+
+python -m streamlit run SmartFood_Rescue/app.py
 
 ## Author
 
