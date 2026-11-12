@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# FEAST AI - Large dataset
+food_dataset/train_prepared.csv
