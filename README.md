@@ -229,32 +229,43 @@ Before running the Streamlit application, ensure that `train_prepared.csv` is pl
 **Status:** Completed
 
 
+
 ## Installation and Execution
 
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Chris-8980/FEAST-AI.git
+```
 
 ### 2. Navigate to the Project Directory
+
+```bash
 cd FEAST-AI
+```
 
 ### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Prepare the Dataset
-The prepared training dataset (train_prepared.csv) is not included in this repository because it exceeds GitHub's file upload limit.
+
+The prepared training dataset (`train_prepared.csv`) is not included in this repository because it exceeds GitHub's file upload limit.
 
 Place the required file inside the following directory:
-food_dataset/train_prepared.csv
-Refer to food_dataset/README.md for dataset setup instructions.
+
+`food_dataset/train_prepared.csv`
+
+Refer to [`food_dataset/README.md`](food_dataset/README.md) for dataset setup instructions.
 
 ### 5. Run the Application
-python -m streamlit run SmartFood_Rescue/app.py
 
-### 5. Run the Application
-
+```bash
 python -m streamlit run SmartFood_Rescue/app.py
+```
+
 
 ## Author
 
